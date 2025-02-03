@@ -1,6 +1,6 @@
 # Web Development Internship Projects at Cognifyz Technologies
 
-This repository contains all the projects I worked on during my internship at **Cognifyz Technologies**. These projects are designed to showcase my skills in HTML, CSS, JavaScript, Bootstrap, and Bulma CSS through various levels of tasks. The projects are divided into different levels based on complexity and skills demonstrated.
+This repository contains all the projects I worked on during my internship at **Cognifyz Technologies**. These projects are designed to showcase my skills in HTML, CSS and JavaScript through various levels of tasks. The projects are divided into different levels based on complexity and skills demonstrated.
 
 ## Project Overview
 
