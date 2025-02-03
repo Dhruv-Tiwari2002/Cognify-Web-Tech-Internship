@@ -1,0 +1,70 @@
+<!-- Task-1: 
+Create a simple webpage with a heading, paragraph, and image using HTML and CSS.
+Build a basic form with a single input field and a submit button using HTML and CSS.
+Design and code a simple navigation menu with three links using HTML and CSS. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Web Development:- (Level-1,Task-1)</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Header -->
+        <header>
+            <nav id="navbar">
+                <div id="logo-section">
+                    <a href="https://cognifyz.com/" target="_blank">
+                        <img id="logo" src="https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png"
+                            alt="Cognifyz Logo">
+                    </a>
+                    <h1 id="logo-caption">Insights That Drive Decisions</h1>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="https://cognifyz.com/" target="_blank" class="nav-link">Home</a></li>
+                    <li><a href="https://cognifyz.com/about-us/" target="_blank" class="nav-link">About Us</a></li>
+                    <li><a href="https://cognifyz.com/contact-us/" target="_blank" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section id="introduction">
+                <h1>Cognifyz Technologies</h1>
+                <p>Empowering Businesses with Data-Driven Insights</p>
+            </section>
+
+            <section id="image-section">
+                <figure>
+                    <img id="image" src="./images.jpeg" alt="Cognifyz Image">
+                    <figcaption>Innovating for a Smarter Future</figcaption>
+                </figure>
+            </section>
+
+            <section id="form-section">
+                <h2>Join Our Team!</h2>
+                <p>Apply for exciting internship opportunities with us!</p>
+                <form id="form">
+                    <input type="email" id="email-input" placeholder="Enter your email" required>
+                    <button id="submit-button">Apply Now</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Cognifyz Technologies | Made with ❤︎ by Dhruv</p>
+        </footer>
+    </div>
+</body>
+
+</html>

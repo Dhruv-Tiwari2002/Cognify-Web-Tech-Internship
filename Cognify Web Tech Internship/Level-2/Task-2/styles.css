@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+:root {
+    --main-background-color: #f5faff;
+    --main-text-color: #333;
+    --header-bg-color: #ffffff;
+    --navbar-bg-color: #4d94ff;
+    --nav-links-bg-color: #80bfff;
+    --nav-links-border-color: #0059b3;
+    --nav-links-hover-bg-color: #0059b3;
+    --hero-bg-color: #eaf3ff;
+    --description-bg-color: #ffffff;
+    --quotes-symbol-color: #0066cc;
+    --caption-text-color: #666666;
+    --footer-bg-gradient-start: #f0f7ff;
+    --footer-bg-gradient-end: #d9e6ff;
+    --author-text-color: #333333;
+    --icons-color: #666666;
+    --icons-hover-color: #0059b3;
+}
+
+body {
+    background-color: var(--main-background-color);
+    line-height: 1.6;
+}
+
+/* Header Styling */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--header-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header img {
+    width: 150px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: var(--nav-links-border-color);
+    border: 2px solid var(--nav-links-border-color);
+    background-color: var(--nav-links-bg-color);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-menu .nav-link:hover {
+    background-color: var(--nav-links-hover-bg-color);
+    color: #fff;
+}
+
+#hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--main-text-color);
+    transition: 0.3s;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--hero-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#description {
+    width: 55%;
+    background-color: var(--description-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#description h1, #description h2 {
+    color: var(--nav-links-border-color);
+    margin-bottom: 10px;
+}
+
+#description ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+#description ul li {
+    margin-bottom: 10px;
+}
+
+#image {
+    width: 40%;
+}
+
+.reference-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--caption-text-color);
+}
+
+.quotes {
+    color: var(--quotes-symbol-color);
+    font-size: 30px;
+}
+
+/* Footer Section */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, var(--footer-bg-gradient-start), var(--footer-bg-gradient-end));
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+#footer-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--nav-links-border-color);
+}
+
+#social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-menu .link {
+    color: var(--icons-color);
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-menu .link:hover {
+    transform: scale(1.1);
+    color: var(--icons-hover-color);
+}
+
+#author {
+    font-size: 16px;
+    color: var(--author-text-color);
+}
+
+#author a {
+    font-weight: bold;
+    color: var(--nav-links-border-color);
+    transition: color 0.3s ease;
+}
+
+#author a:hover {
+    color: var(--icons-hover-color);
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #description {
+        width: 90%;
+    }
+
+    #image {
+        width: 90%;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-menu {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #description {
+        font-size: 14px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .caption {
+        font-size: 14px;
+    }
+}
